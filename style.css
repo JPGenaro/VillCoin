@@ -28,6 +28,7 @@ body{
 /* Titulo */
 .title{
     text-align: center;
+    text-decoration: underline;
     margin: 10px 0;
     background: #198abe;
     color: #ffffff;
@@ -42,6 +43,16 @@ body{
     background: #2f3640;
     color: #ffffff;
     font-size: 20px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    
+}
+.aptitudes-title{
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 22px;
     padding: 20px 0;
     padding-bottom: 20px;
     
@@ -78,6 +89,9 @@ body{
 .fotos-menu img{
     width: 90%;
 }
+.foto_2{
+    padding: 0;
+}
 
 /* BOTONES */
 .btn{
@@ -104,6 +118,7 @@ body{
     max-width: 600px;
     margin: 0 auto;
     flex-direction: column;
+    text-decoration: underline;
     justify-content: center;
     align-items: center;
   }
