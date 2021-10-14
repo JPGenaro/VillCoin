@@ -3,8 +3,8 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    
 }
+
 body{
     background-color:#000000;
     color: #ffffff;
@@ -25,6 +25,7 @@ body{
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
+
 /* Titulo */
 .title{
     text-align: center;
@@ -32,12 +33,22 @@ body{
     margin: 10px 0;
     background: #198abe;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
     padding: 20px 0;
     padding-bottom: 20px;
 }
 
 /* APTITUDES */
+.aptitudes-title{
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    
+}
 .aptitudes-main{
     margin: 10px 0;
     background: #2f3640;
@@ -45,7 +56,6 @@ body{
     font-size: 20px;
     padding: 20px 0;
     padding-bottom: 20px;
-    
 }
 .aptitudes-title{
     text-align: center;
@@ -64,15 +74,14 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .aptitudes-menu img{
     width: 90%;
-    
-
 }
+
 /* FOTOS */
 .fotos-main{
     margin: 10px 0;
-    
     color: #ffffff;
     font-size: 20px;
     padding: 20px 0;
@@ -86,6 +95,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .fotos-menu img{
     width: 90%;
 }
@@ -121,14 +131,14 @@ body{
     text-decoration: underline;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 .form input{
     width: 90%;
     height: 30px;
     margin: 0.5rem;
-  }
-  
+}
+
 /* SOCIAL border-radius: 100%;*/
 .social{
     margin: 35px;
@@ -155,7 +165,6 @@ body{
 }
 
 /* FOOTER LINKS */
-
 .footer-links{
     background: #000000;
     color:#ffffff;
@@ -173,18 +182,12 @@ body{
 }
 
 /* FORMATO CELULAR */
-
 @media(max-width:800px){
     .aptitudes-menu{
-        
         grid-template-columns: 1fr;
-        
     }
     
     .fotos-menu{
-        
         grid-template-columns: 1fr;
-        
     }
-    
 }

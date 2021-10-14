@@ -6,9 +6,11 @@ function send() {
     var gmail = document.getElementById("inputGmail").value;
     // Controlar inputs vacíos
     if (name != "" && surname != "" && gmail != "") {
-        //Ventana emergente
-        window.alert("Formulario enviado exitosamente!");
-        
+        answer = window.confirm("Está seguro de que desea enviar el formulario?");
+        if (answer == true) {
+            //Ventana emergente
+            window.alert("Formulario enviado exitosamente!");
+        }
     }
     else {
         // Ventana emergente
@@ -21,10 +23,7 @@ ScrollReveal().reveal('.fotos-menu', {delay: 500}, {duration: 5000});
 
 window.sr = ScrollReveal();
     sr.reveal('.aptitudes-ft',{
-
         duration: 4000,
         origin: 'left',
         distance: '400px'
-        
-        
     });
