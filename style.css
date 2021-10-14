@@ -244,4 +244,14 @@ body{
     .fotos-menu{
         grid-template-columns: 1fr;
     }
+
+    .foto-menu img{
+        grid-template-columns: 1fr;
+    }
+    
+    .pag-web-menu{
+        grid-template-columns: 1fr;
+    }
+
+    
 }
