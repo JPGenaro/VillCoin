@@ -83,12 +83,19 @@ body{
 }
 
 /* FOTOS */
+.foto{
+    border-radius: 15px;
+    height: 350px;
+    width: 200px;
+}
+
 .fotos-main{
     margin: 10px 0;
     color: #ffffff;
     font-size: 20px;
     padding: 20px 0;
     padding-bottom: 20px;
+    border-radius: 15px;
 }
 
 .fotos-menu{
@@ -97,6 +104,7 @@ body{
     margin:auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 15px;
 }
 
 .fotos-menu img{
@@ -104,11 +112,18 @@ body{
 }
 .foto_2{
     padding: 0;
-    
+    border-radius: 15px;
     height: 225px;
 }
-/* IMAGEN */ 
 
+.foto_3{
+    margin-left: 135px;
+    border-radius: 100%;
+    height: 225px;
+    width: 225px;
+}
+
+/* IMAGEN */ 
 .pag-web{
     margin: 10px 5;
     color: #ffffff;
@@ -132,7 +147,7 @@ body{
     margin: 10px 0;
     width: 90%;
     margin:auto;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -164,6 +179,10 @@ body{
     text-decoration: underline;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+}
+.form-aux{
+    border-radius: 15px;
 }
 
 .form input{
