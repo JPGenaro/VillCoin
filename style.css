@@ -29,7 +29,7 @@ body{
 .title{
     text-align: center;
     margin: 10px 0;
-    background: #2f3640;
+    background: #198abe;
     color: #ffffff;
     font-size: 20px;
     padding: 20px 0;
@@ -61,7 +61,7 @@ body{
 /* FOTOS */
 .fotos-main{
     margin: 10px 0;
-    background: #2f3640;
+    
     color: #ffffff;
     font-size: 20px;
     padding: 20px 0;
@@ -99,6 +99,7 @@ body{
 
 /* FORMULARIO */
 .form {
+    background-color: rgb(32, 29, 29);
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
