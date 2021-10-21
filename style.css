@@ -190,4 +190,7 @@ body{
     .fotos-menu{
         grid-template-columns: 1fr;
     }
+    .otros-proyectos-menu{
+        grid-template-columns: 1fr;
+    }
 }
