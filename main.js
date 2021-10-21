@@ -20,10 +20,13 @@ function send() {
 
 /*ANIMACIONES*/
 ScrollReveal().reveal('.fotos-menu', {delay: 500}, {duration: 5000});
+ScrollReveal().reveal('.otros-proyectos-dv', {delay: 500}, {duration: 5000});
+ScrollReveal().reveal('.form', {delay: 500}, {duration: 5000});
 
 window.sr = ScrollReveal();
     sr.reveal('.aptitudes-ft',{
         duration: 4000,
         origin: 'left',
-        distance: '400px'
+        distance: '500px'
     });
+    

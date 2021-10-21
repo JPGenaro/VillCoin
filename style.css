@@ -341,7 +341,9 @@ body{
     .aptitudes-menu{
         grid-template-columns: 1fr;
     }
-    
+    .aptitudes-main{
+        margin: 0px;
+    }
     .fotos-menu{
         grid-template-columns: 1fr;
     }
