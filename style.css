@@ -127,12 +127,10 @@ body{
 /* IMAGEN */ 
 .pag-web{
     margin: 10px 5;
-    color: #ffffff;
     font-size: 20px;
     padding: 20px 0;
     padding-bottom: 20px;
     
-    height: 580px;
     display: flex; /*Centra los elementos*/
     flex-direction: column; /*Texto este debajo*/
     align-items: center;
@@ -142,11 +140,57 @@ body{
     
 }
 .pag-web-menu{
-    margin: 10px 0;
+    width: 90%;
+    display: flex; /*Centra los elementos*/
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    background: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+
+.web-menu-img{
+    border-radius: 30px;
+}
+
+.container{
     width: 90%;
     margin:auto;
-    display: flex;
+}
+/* OTROS PROYECTOS */
+.otros-proyectos-main{
+    display: grid;
+
+}
+
+.otros-proyectos-menu{
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+.otros-proyectos-dv{
+    margin: 15px;
+}
+
+
+.otros-proyectos-menu img{
+    height: 70%;
+    width: 95%;
+    padding: 10px;
+
+
+}
+.otros-proyectos-menu p{
+
+
+    padding: 10 20px;
+
+
 }
 
 /* BOTONES */
