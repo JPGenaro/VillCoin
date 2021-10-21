@@ -72,10 +72,14 @@ body{
 }
 .aptitudes-menu{
     margin: 10px 0;
-    width: 90%;
     margin:auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+;
+    width: 100%;
+    text-align: center;
+
 }
 
 .aptitudes-menu img{
@@ -100,11 +104,16 @@ body{
 
 .fotos-menu{
     margin: 10px 0;
-    width: 90%;
-    margin:auto;
+    width: 10%;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: 15px;
+
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+    
 }
 
 .fotos-menu img{
@@ -124,9 +133,12 @@ body{
     width: 225px;
 }
 
-/* OTROS PROYECTOS */
+/* DESARROLLADORES */
 .otros-proyectos-main{
     display: grid;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 50px;
 }
 
 .otros-proyectos-menu{
@@ -135,6 +147,7 @@ body{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .otros-proyectos-dv{
@@ -255,11 +268,32 @@ body{
 }
 */
 /* FORMATO CELULAR */
+@media(max-width:1292px){
+    .otros-proyectos-main{
+        padding-bottom: 40px;
+    }
+
+    
+    
+}
+@media(max-width:955px){
+    .otros-proyectos-main{
+        padding-bottom: 60px;
+    }
+
+    
+    
+}
 @media(max-width:900px){
     .otros-proyectos-menu{
         grid-template-columns: 1fr;
+        font-size: 14px;
+        
     }
-
+    .otros-proyectos-main{
+        border-radius: 30px;
+        
+    }
     
     
 }
@@ -273,5 +307,19 @@ body{
     }
 
     
+    
+}
+@media(max-width:245px){
+    
+    .otros-proyectos-menu{
+
+        font-size: 12px;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
     
 }
