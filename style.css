@@ -29,6 +29,29 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
+/* SOMBRAS Y BRILLO */
+.text-glow {/*Definig font could be useful!*/ 
+    color: #FFFFFF; 
+} 
+
+.text-glow:hover { 
+    text-shadow: 1px 0px 20px #00f7ff; 
+    -webkit-transition: 1s linear 0s; 
+    -moz-transition: 1s linear 0s; 
+    -o-transition: 1s linear 0s; 
+    transition: 1s linear 0s; 
+    outline: 0 none; 
+} 
+
+.text-glow:not(:hover) { 
+    text-shadow: 1px 0px 20px #2036ff; 
+    -webkit-transition: 1s linear 0s; 
+    -moz-transition: 1s linear 0s; 
+    -o-transition: 1s linear 0s; 
+    transition: 1s linear 0s; 
+    outline: 0 none; 
+}
+
 /* Titulo */
 .title{
     text-align: center;
@@ -39,6 +62,7 @@ body{
     font-size: 30px;
     padding: 20px 0;
     padding-bottom: 20px;
+    text-shadow: #2036ff 0 0 10px;
 }
 
 /* APTITUDES */
@@ -181,7 +205,7 @@ body{
 }
 
 .btn:hover{
-    opacity: .7;
+    text-shadow: #ffffff 0 0 10px; 
 }
 
 /* FORMULARIO */
