@@ -124,44 +124,9 @@ body{
     width: 225px;
 }
 
-/* IMAGEN */ 
-.pag-web{
-    margin: 10px 5;
-    font-size: 20px;
-    padding: 20px 0;
-    padding-bottom: 20px;
-    
-    display: flex; /*Centra los elementos*/
-    flex-direction: column; /*Texto este debajo*/
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    
-    
-}
-.pag-web-menu{
-    width: 90%;
-    display: flex; /*Centra los elementos*/
-    grid-template-columns: 1fr 1fr 1fr;
-    height: auto;
-    background: #000000;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 30px;
-}
-
-.web-menu-img{
-    border-radius: 30px;
-}
-
-.container{
-    width: 90%;
-    margin:auto;
-}
 /* OTROS PROYECTOS */
 .otros-proyectos-main{
     display: grid;
-
 }
 
 .otros-proyectos-menu{
@@ -170,28 +135,22 @@ body{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-
 }
+
 .otros-proyectos-dv{
     margin: 15px;
 }
-
 
 .otros-proyectos-menu img{
     height: 70%;
     width: 95%;
     padding: 10px;
-
-
 }
+
 .otros-proyectos-menu p{
-
-
     padding: 10 20px;
-
-
 }
+
 
 /* BOTONES */
 .btn{
@@ -278,6 +237,14 @@ body{
 
 
 /* FORMATO CELULAR */
+@media(max-width:900px){
+    .otros-proyectos-menu{
+        grid-template-columns: 1fr;
+    }
+
+    
+    
+}
 @media(max-width:800px){
     .aptitudes-menu{
         grid-template-columns: 1fr;
@@ -287,13 +254,6 @@ body{
         grid-template-columns: 1fr;
     }
 
-    .foto-menu img{
-        grid-template-columns: 1fr;
-    }
     
-    .pag-web-menu{
-        grid-template-columns: 1fr;
-    }
-
     
 }
