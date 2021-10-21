@@ -124,30 +124,33 @@ body{
     width: 225px;
 }
 
-/* IMAGEN */ 
-.pag-web{
-    margin: 10px 5;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 20px 0;
-    padding-bottom: 20px;
-    
-    height: 580px;
-    display: flex; /*Centra los elementos*/
-    flex-direction: column; /*Texto este debajo*/
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    
-    
+/* OTROS PROYECTOS */
+.otros-proyectos-main{
+    display: grid;
 }
-.pag-web-menu{
-    margin: 10px 0;
-    width: 90%;
-    margin:auto;
-    display: flex;
+
+.otros-proyectos-menu{
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.otros-proyectos-dv{
+    margin: 15px;
+}
+
+.otros-proyectos-menu img{
+    height: 70%;
+    width: 95%;
+    padding: 10px;
+}
+
+.otros-proyectos-menu p{
+    padding: 10 20px;
+}
+
 
 /* BOTONES */
 .btn{
@@ -230,10 +233,36 @@ body{
     text-align: center;
     padding-bottom: 20px;
 }
+/*
+.glow {
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  
 
-
-
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 
+                   0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+}
+*/
 /* FORMATO CELULAR */
+@media(max-width:900px){
+    .otros-proyectos-menu{
+        grid-template-columns: 1fr;
+    }
+
+    
+    
+}
 @media(max-width:800px){
     .aptitudes-menu{
         grid-template-columns: 1fr;
@@ -243,13 +272,6 @@ body{
         grid-template-columns: 1fr;
     }
 
-    .foto-menu img{
-        grid-template-columns: 1fr;
-    }
     
-    .pag-web-menu{
-        grid-template-columns: 1fr;
-    }
-
     
 }
