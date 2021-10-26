@@ -16,3 +16,7 @@ sr.reveal('.photo-1'),{duration: 2000}
 sr.reveal('.photo-2'),{duration: 2000}
 sr.reveal('.photo-int'),{duration: 1500}
 sr.reveal('.photo-plan'),{duration: 1500}
+
+function volver() {
+    history.go(-1);
+}

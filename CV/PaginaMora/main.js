@@ -8,7 +8,6 @@ ScrollReveal().reveal('.intereses-menu', {delay: 500});
 ScrollReveal().reveal('.futuros-proyectos-main', {delay: 500});
 
 window.sr = ScrollReveal();
-
     sr.reveal('.nav-main',{
 
         duration: 2000,
@@ -25,3 +24,7 @@ window.sr = ScrollReveal();
         
         
     });
+
+function volver() {
+    history.go(-1);
+}

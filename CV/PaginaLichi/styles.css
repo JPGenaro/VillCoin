@@ -31,6 +31,20 @@ div{
     padding: 15px;
 }
 
+.btn_volver{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    height: 8%;
+    margin: 15px;
+    margin-left: 20px;
+    color: white;
+    background: rgb(80, 0, 130);
+    border-radius: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0 .5);
+}
+
 /* Cabeza de Pagina */
 .nav-main{
     width: 100%;

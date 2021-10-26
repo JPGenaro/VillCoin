@@ -14,3 +14,7 @@ window.addEventListener('click', e=>{
             menu.classList.toggle("spread")
     }
 })
+
+function volver() {
+    history.go(-1);
+}
