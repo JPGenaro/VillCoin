@@ -60,7 +60,7 @@ body{
 
 .btn-bg {
     position: absolute;
-    top: 40px;
+    top: 18px;
     left: 30px;
     background: #fff;
     width: 110px;
@@ -340,6 +340,14 @@ body{
     .fotos-an{
         margin: 5px;
     } 
+}
+@media(max-width:500px){
+    .btn-bg {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        
+    }
 }
 @media(max-width:405px){
     .icono{
