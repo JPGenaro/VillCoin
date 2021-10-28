@@ -1,3 +1,21 @@
+/* NAVEGADOR */
+const icono = document.querySelector('.icono');
+const menu = document.querySelector('.navegar');
+
+console.log(menu)
+console.log(icono)
+
+icono.addEventListener('click', ()=>{
+    menu.classList.toggle("spread")
+})
+
+window.addEventListener('click', e=>{
+    if(menu.classList.contains('spread')
+        && e.target != menu && e.target != icono    ){
+            menu.classList.toggle("spread")
+    }
+}) 
+
 var tipo = 1;
 cambiarFondo();
 function cambiarFondo(){
@@ -12,7 +30,26 @@ function cambiarFondo(){
     }
 }
 function oscuro(){
-    
+    console.log("funco");
+    document.getElementById("body").style.backgroundColor = "#020202";
+    document.getElementById("intro").style.backgroundColor = "black";
+    document.getElementById("intro").style.color = "white";
+    document.getElementById("introduccion").style.color = "white";
+    document.getElementById("desarrolladores").style.color = "white";
+    document.getElementById("desarrolladores").style.backgroundColor = "black";
+    document.getElementById("des1").style.color = "white";
+    document.getElementById("des2").style.color = "white";
+    document.getElementById("des3").style.color = "white";
+    document.getElementById("formulario").style.backgroundColor = "rgb(32, 29, 29)";
+    document.getElementById("formulario").style.color = "white";
+    document.getElementById("btnEnviar").style.backgroundColor = "#262626";
+    document.getElementById("btnEnviar").style.color = "white";
+    document.getElementById("nav").style.backgroundImage = "linear-gradient(135deg, #000000 0%, #303030 100%)";
+    document.getElementById("1").style.color = "white";
+    document.getElementById("2").style.color = "white";
+    document.getElementById("3").style.color = "white";
+    document.getElementById("4").style.color = "white";
+
 }
 function claro(){
     console.log("funco");
@@ -25,7 +62,16 @@ function claro(){
     document.getElementById("des1").style.color = "black";
     document.getElementById("des2").style.color = "black";
     document.getElementById("des3").style.color = "black";
-    document.getElementById("footer").style.backgroundColor = "#3b3b3b";
+    document.getElementById("formulario").style.backgroundColor = "#c7c7c7";
+    document.getElementById("formulario").style.color = "black";
+    document.getElementById("btnEnviar").style.backgroundColor = "grey";
+    document.getElementById("btnEnviar").style.color = "white";
+    document.getElementById("nav").style.backgroundImage = "linear-gradient(135deg, white 0%, grey 100%)";
+    
+    document.getElementById("1").style.color = "black";
+    document.getElementById("2").style.color = "black";
+    document.getElementById("3").style.color = "black";
+    document.getElementById("4").style.color = "black";
 }
 
 
@@ -81,20 +127,3 @@ window.sr = ScrollReveal();
     
 
 
-/* NAVEGADOR */
-const icono = document.querySelector('.icono');
-const menu = document.querySelector('.navegar');
-
-console.log(menu)
-console.log(icono)
-
-icono.addEventListener('click', ()=>{
-    menu.classList.toggle("spread")
-})
-
-window.addEventListener('click', e=>{
-    if(menu.classList.contains('spread')
-        && e.target != menu && e.target != icono    ){
-            menu.classList.toggle("spread")
-    }
-}) 
