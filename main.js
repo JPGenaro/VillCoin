@@ -20,7 +20,6 @@ window.addEventListener('click', e=>{
 var tipo = 0;
 cambiarFondo();
 function cambiarFondo(){
-    console.log("cambiar");
     if(tipo==0) {
         tipo=1;
         oscuro();
@@ -35,7 +34,6 @@ function cambiarFondo(){
 
 // Modo Oscuro
 function oscuro(){
-    console.log("funco");
     document.getElementById("body").style.backgroundColor = "#020202";
     document.getElementById("intro").style.backgroundColor = "black";
     document.getElementById("intro").style.color = "white";
@@ -59,7 +57,6 @@ function oscuro(){
 
 // Modo Claro
 function claro(){
-    console.log("funco");
     document.getElementById("body").style.backgroundColor = "white";
     document.getElementById("intro").style.backgroundColor = "#c7c7c7";
     document.getElementById("intro").style.color = "black";
