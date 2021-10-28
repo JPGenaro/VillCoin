@@ -1,3 +1,34 @@
+var tipo = 1;
+cambiarFondo();
+function cambiarFondo(){
+    console.log("cambiar");
+    if(tipo==0) {
+        tipo=1;
+        oscuro();
+    }
+    else {
+        tipo = 0; 
+        claro();
+    }
+}
+function oscuro(){
+    
+}
+function claro(){
+    console.log("funco");
+    document.getElementById("body").style.backgroundColor = "white";
+    document.getElementById("intro").style.backgroundColor = "#c7c7c7";
+    document.getElementById("intro").style.color = "black";
+    document.getElementById("introduccion").style.color = "black";
+    document.getElementById("desarrolladores").style.color = "black";
+    document.getElementById("desarrolladores").style.backgroundColor = "#c7c7c7";
+    document.getElementById("des1").style.color = "black";
+    document.getElementById("des2").style.color = "black";
+    document.getElementById("des3").style.color = "black";
+    document.getElementById("footer").style.backgroundColor = "#3b3b3b";
+}
+
+
 /* AVISO DEL FORMULARIO*/
 function send() {
     // Obtener valores de Inputs
@@ -19,9 +50,20 @@ function send() {
 }
 
 /*ANIMACIONES*/
-ScrollReveal().reveal('.fotos-menu', {delay: 500}, {duration: 5000});
-ScrollReveal().reveal('.otros-proyectos-dv', {delay: 500}, {duration: 5000});
-ScrollReveal().reveal('.form', {delay: 500}, {duration: 5000});
+ScrollReveal().reveal('.fotos-menu', {
+    delay: 500, 
+    duration: 1500
+});
+ScrollReveal().reveal('.otros-proyectos-dv', {
+    delay: 500, 
+    duration: 1500
+});
+ScrollReveal().reveal('.form', {
+    delay: 500, 
+    duration:1500
+    
+});
+
 
 window.sr = ScrollReveal();
     sr.reveal('.aptitudes-ft',{
@@ -35,6 +77,7 @@ window.sr = ScrollReveal();
         origin: 'bottom',
         distance: '-100px'
     })
+    
     
 
 
