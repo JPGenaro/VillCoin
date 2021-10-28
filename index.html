@@ -24,17 +24,17 @@
 </head>
 
 <body id="body">
-    <div class="titulo-animacion" id="villcoin">    
-            <div class="title text-glow"> 
-                <h1 >VillCoin</h1>
-            </div>
-
+    <div class="titulo-animacion" id="villcoin">
+        <div class="title text-glow">
+            <!-- Boton Modos -->
+            <button class="btn-bg" id="btn-background" onclick="cambiarFondo()">Modo Claro</button>
+            
+            <h1 >VillCoin</h1>
+        </div>
     </div>
     <div class="separar"></div>
 
-    
-
-    <!-- INTRODUCCION -->
+    <!-- Introduccion -->
     <section class="aptitudes-main" id="intro">
         <div class="aptitudes-title" id="introduccion"><h2>INTRODUCCION</h2></div>
         <div class="aptitudes-menu">
@@ -49,18 +49,21 @@
                     evitar que alguien pueda hacer copias como haríamos, por ejemplo, con una foto.
                     </p>
             </div>
-        </section>
-        <section class="menu">
-            <img src="src/icono.svg" alt="" class="icono">
-            <nav class="navegar" id="nav">
-                <a href="#villcoin" id="1">VillCoin</a>
-                <a href="#introduccion" id="2">Introduccion</a>
-                <a href="#desarrolladores" id="3">Desarrolladores</a>
-                <a href="#formulario" id="4">Formulario</a>
-                
-            </nav>
-        </section>
-    <!-- FOTOS -->
+        </div>
+    </section>
+
+     <!-- Hamburguesa -->
+    <section class="menu">
+        <img src="src/icono.svg" alt="" class="icono">
+        <nav class="navegar" id="nav">
+            <a href="#villcoin" id="1">VillCoin</a>
+            <a href="#introduccion" id="2">Introduccion</a>
+            <a href="#desarrolladores" id="3">Desarrolladores</a>
+            <a href="#formulario" id="4">Formulario</a>
+        </nav>
+    </section>
+
+    <!-- Fotos -->
     <section class="fotos-main">
         <div class="fotos-menu">
             <div class ="fotos-an">
@@ -74,11 +77,9 @@
             </div>
         </div>
     </section>
-    <section id="body">
-        
-    </section><br>
+    <section id="body"></section><br>
 
-    <!-- Foto boton -->
+    <!-- Desarrolladores -->
     <div class="container">
         <div class="otros-proyectos-main" id="desarrolladores">
             <div class="titulo">
@@ -106,7 +107,7 @@
         </div>
     </div><br><br>
 
-    <!-- FORMULARIO -->
+    <!-- Formulario -->
     <section class="form" id="formulario">
         <fieldset class="form-aux">
             <h2>FORMULARIO</h2>
@@ -124,7 +125,7 @@
 
     <div class="separar"></div>
 
-    <!-- PIE DE PAGINA -->
+    <!-- Pie de Pagina -->
     <section class="footer-links">
         <section class="social">
             <p id="C6">Puedes Encontrarnos En: </p>
@@ -141,7 +142,6 @@
             </div>
         </section>
     </section>
-
     <footer class="footer">
         <h3>Copyright © Craig Loewen 2021</h3>
     </footer>

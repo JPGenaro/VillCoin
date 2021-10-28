@@ -16,19 +16,24 @@ window.addEventListener('click', e=>{
     }
 }) 
 
-var tipo = 1;
+// Cambiar modo claro/oscuro
+var tipo = 0;
 cambiarFondo();
 function cambiarFondo(){
     console.log("cambiar");
     if(tipo==0) {
         tipo=1;
         oscuro();
+        document.getElementById("btn-background").innerText = "Modo Claro";
     }
     else {
         tipo = 0; 
         claro();
+        document.getElementById("btn-background").innerText = "Modo Oscuro";
     }
 }
+
+// Modo Oscuro
 function oscuro(){
     console.log("funco");
     document.getElementById("body").style.backgroundColor = "#020202";
@@ -51,6 +56,8 @@ function oscuro(){
     document.getElementById("4").style.color = "white";
 
 }
+
+// Modo Claro
 function claro(){
     console.log("funco");
     document.getElementById("body").style.backgroundColor = "white";
@@ -67,7 +74,6 @@ function claro(){
     document.getElementById("btnEnviar").style.backgroundColor = "grey";
     document.getElementById("btnEnviar").style.color = "white";
     document.getElementById("nav").style.backgroundImage = "linear-gradient(135deg, white 0%, grey 100%)";
-    
     document.getElementById("1").style.color = "black";
     document.getElementById("2").style.color = "black";
     document.getElementById("3").style.color = "black";
@@ -75,7 +81,7 @@ function claro(){
 }
 
 
-/* AVISO DEL FORMULARIO*/
+// Aviso del formulario
 function send() {
     // Obtener valores de Inputs
     var name = document.getElementById("inputName").value;
@@ -95,7 +101,7 @@ function send() {
     }
 }
 
-/*ANIMACIONES*/
+// Animaciones
 ScrollReveal().reveal('.fotos-menu', {
     delay: 500, 
     duration: 1500
@@ -107,23 +113,16 @@ ScrollReveal().reveal('.otros-proyectos-dv', {
 ScrollReveal().reveal('.form', {
     delay: 500, 
     duration:1500
-    
 });
-
-
 window.sr = ScrollReveal();
-    sr.reveal('.aptitudes-ft',{
-        duration: 3000,
-        origin: 'left',
-        distance: '500px',
-        delay: 1000
-    });
-    sr.reveal('.titulo-animacion',{
-        duration: 3000,
-        origin: 'bottom',
-        distance: '-100px'
-    })
-    
-    
-
-
+sr.reveal('.aptitudes-ft',{
+    duration: 3000,
+    origin: 'left',
+    distance: '500px',
+    delay: 1000
+});
+sr.reveal('.titulo-animacion',{
+    duration: 3000,
+    origin: 'bottom',
+    distance: '-100px'
+})
