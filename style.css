@@ -392,7 +392,17 @@ body{
     }
     .fotos-menu{
         grid-template-columns: 1fr;
-    }  
+    } 
+    .fotos-an{
+        margin: 5px;
+    } 
+}
+@media(max-width:405px){
+    .icono{
+        
+        right: 20px;
+        
+    } 
 }
 @media(max-width:600px){
     .navegar{
@@ -420,7 +430,9 @@ body{
     .links a {
         margin: 0 5px;
     }
-    
+    .titulo{
+        font-size: 14px;
+    }
 }
 @media(max-width:230px){
     
